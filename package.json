@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
@@ -26,6 +25,7 @@
     "json-server": "^0.12.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
+    "sasslint-loader": "0.0.1",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "*",
     "vue-resource": "*",

@@ -11,14 +11,21 @@ module.exports = {
   },
 
   module: {
+    // preLoaders: [
+    //   { test: /\s[a|c]ss$/, exclude: /node_modules/, loader: '' }
+    // ],
+
     loaders: [
       { test: /\.vue$/, loader: 'vue-loader' },
       { test: /\.js$/, loader: 'babel-loader' },
       { test: /\.png|jpg|jpeg|gif$/, loader: 'file-loader' },
-      { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
+      { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader!sasslint-loader' }
       // { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!sass') }
     ]
   },
+
+
+
   resolve: {
     alias: {
       vue: 'vue/dist/vue.js'
