@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-</head>
-<body>
-1234
-</body>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="src/styles/style.css">
+    <title>Бронирование переговорок</title>
+  </head>
+  <body>
+    <div  id="app">
+      <header>
+        <ul>
+          <router-link to="/home"><li>Главная</li></router-link>
+          <router-link to="/login"><li>Вход</li></router-link>
+          <router-link to="/reg"><li>Регистрация</li></router-link>
+        </ul>
+      </header>
+      <router-view></router-view>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
 </html>
