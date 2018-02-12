@@ -1,0 +1,24 @@
+<template>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="reg-form">
+    <h1>Регистрация на сайте</h1>
+    <fieldset>
+      <form>
+        <input type="text" required placeholder="Имя">
+        <input type="text" required placeholder="Фамилия">
+        <input type="phone" required placeholder="Номер телефона">
+        <input type="email" required placeholder="Почта">
+        <input type="password" required placeholder="Пароль">
+        <input type="submit" value="Зарегистрироваться" align="center">
+      </form>
+    </fieldset>
+  </div>
+  <router-view></router-view>
+  <link rel="stylesheet" href="../src/styles/reg.scss">
+</body>
+</template>

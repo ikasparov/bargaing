@@ -1,0 +1,37 @@
+.home-page {
+	background: url(../styles/img/home.jpg) no-repeat;
+	background-size: 100%;
+
+  table, tr{
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+  td {
+  	font-size: 16px;
+  	color: #ADFF2F;
+  }
+
+
+  .leftarrow {
+    float: left;
+    text-decoration: none;
+    padding-right: 39%;
+  }
+
+  .rightarrow {
+    float: right;
+    text-decoration: none;
+  }
+
+  .time {
+    float: left;
+    width: 70px;
+    float: left;
+  }
+
+  .room {
+  	width: 23%;
+  	font-size: 20px;
+  }
+}

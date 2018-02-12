@@ -1,26 +1,16 @@
 <template>
-  <body>
-    <header>
-      <h1>Добро пожаловать!</h1>
-    </header>
-
-    <section>
-      <span>Вы перешли на страницу регистрации, но, к сожалению, она еще не готова</span>
-      <p>
-        В будущем на данной странице Вы сможете зарегистрировать свой аккаунт
-      </p>
-      <p>
-        А затем перейти на страницу авторизации для входа
-      </p>
-    </section>
-
-
-    <footer>
-      <p>
-        <b>Осталось совсем немного!</b>
-      </p>
-    </footer>
-    <link rel="stylesheet" href="src/styles/blanket1.scss">
-    <router-view></router-view>
-  </body>
+  <div class="reg-page">
+    <div id="reg-form">
+      <h1>Регистрация на сайте</h1>
+      <fieldset>
+        <form>
+          <input type="text" required placeholder="ФИО">
+          <input type="phone" required placeholder="Номер телефона">
+          <input type="email" required placeholder="Почта">
+          <input type="password" required placeholder="Пароль">
+          <input type="submit" value="Зарегистрироваться" align="center">
+        </form>
+      </fieldset>
+    </div>
+  </div>
 </template>

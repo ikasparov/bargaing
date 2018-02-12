@@ -55,8 +55,9 @@ table {
 
 /* settings header */
 
-header {
+nav {
   height: 50px;
+
 }
 
 ul {
@@ -64,13 +65,15 @@ ul {
   margin: 0;
   padding: 5px;
   overflow: hidden;
-  background-color: #c0c0c0;
+  background-color: #696969;
+  position: fixed;
+  width: 100%;
 }
 
 li {
   float: left;
-  color: #808080;
-  padding: 10px;
+  color: #F0FFF0;
+  padding: 7px;
 }
 
 li a {

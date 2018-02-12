@@ -1,27 +1,17 @@
 <template>
-  <body>
-    <header>
-      <h1>Добро пожаловать!</h1>
-    </header>
-
-    <section>
-      <span>Вы перешли на страницу авторизации, но, к сожалению, она еще не готова</span>\
-      <p>
-        В будущем на данной странице Вы сможете войти в свой аккаунт
-      </p>
-
-      <p>
-        А затем пользоваться функционалом сайта!
-      </p>
-    </section>
-
-
-    <footer>
-      <p>
-        <b>Осталось совсем немного!</b>
-      </p>
-    </footer>
-    <link rel="stylesheet" href="src/styles/blanket1.scss">
-    <router-view></router-view>
-  </body>
+  <div class="login-page">
+    <div id="login-form">
+      <h1>Авторизация на сайте</h1>
+      <fieldset>
+        <form>
+            <input type="email" required placeholder="Логин">
+            <input type="password" required placeholder="Пароль">
+            <input type="submit" value="Войти">
+            <footer class="clearfix">
+              <p><span class="info">?</span><a href="#">Забыли пароль?</a></p>
+            </footer>
+        </form>
+      </fieldset>
+    </div>
+  </div>
 </template>

@@ -1,0 +1,85 @@
+.reg-page {
+  background: url(../styles/img/background.jpg) no-repeat;
+  font: 100%/1.5em sans-serif;
+  background-size: 100%;
+
+  input {
+      border: none;
+      font-family: inherit;
+      font-size: inherit;
+      margin: 0;
+      outline: none;
+      -webkit-appearance: none;
+  }
+
+  input[type="submit"] {
+   cursor: pointer;
+  }
+
+  /* ---------- REG-FORM ---------- */
+
+  #reg-form {
+      margin: 100px auto;
+      width: 300px;
+  }
+
+  #reg-form h1 {
+      background-color: #006400;
+      border-radius: 5px 5px 0 0;
+      color: #fff;
+      font-size: 14px;
+      padding: 20px;
+      text-align: center;
+      text-transform: uppercase;
+  }
+
+  #reg-form fieldset {
+      background: #fff;
+      border-radius: 0 0 5px 5px;
+      padding: 20px;
+      position: relative;
+  }
+
+  #reg-form fieldset:before {
+      background-color: #fff;
+      content: "";
+      height: 8px;
+      left: 50%;
+      margin: -4px 0 0 -4px;
+      position: absolute;
+      top: 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 8px;
+  }
+
+  #reg-form input {
+      font-size: 14px;
+  }
+
+  #reg-form input[type="email"],
+  #reg-form input[type="password"],
+  #reg-form input[type="text"],
+  #reg-form input[type="phone"] {
+      border: 1px solid #dcdcdc;
+      padding: 12px 10px;
+      width: 238px;
+  }
+
+  #reg-form input[type="submit"] {
+      background: #3CB371;
+      border-radius: 3px;
+      color: #fff;
+      float: right;
+      font-weight: bold;
+      margin-top: 20px;
+      padding: 12px 20px;
+  }
+
+  #reg-form input[type="submit"]:hover {
+   background: #2E8B57;
+  }
+}
