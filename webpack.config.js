@@ -1,3 +1,5 @@
+'use strict'
+
 const path = require('path');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,18 +13,15 @@ module.exports = {
   },
 
   module: {
-    // preLoaders: [
-    //   { test: /\s[a|c]ss$/, exclude: /node_modules/, loader: '' }
-    // ],
-
     loaders: [
       { test: /\.vue$/, loader: 'vue-loader' },
-      { test: /\.js$/, loader: 'babel-loader' },
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.png|jpg|jpeg|gif$/, loader: 'file-loader' },
       { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader!sasslint-loader' }
       // { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!sass') }
     ]
   },
+
 
 
 

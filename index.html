@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-</head>
-<body>
-1234
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Бронирование переговорок</title>
+  </head>
+  <body>
+    <div  id="app">
+      <nav>
+        <ul>
+          <router-link to="/home"><li>Главная</li></router-link>
+          <router-link to="/login"><li>Вход</li></router-link>
+          <router-link to="/reg"><li>Регистрация</li></router-link>
+        </ul>
+      </nav>
+      <router-view></router-view>
+    </div>
+  </body>
 </html>
