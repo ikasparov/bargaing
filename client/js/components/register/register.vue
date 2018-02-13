@@ -7,9 +7,11 @@
           <input type="text" required placeholder="ФИО">
           <input type="phone" required placeholder="Номер телефона">
           <input type="email" required placeholder="Почта">
-          <input type="submit" value="Зарегистрироваться" align="center">
         </form>
       </fieldset>
+    </div>
+    <div id="example">
+      <button v-on:click="greet()">Greet</button>
     </div>
   </div>
 </template>
