@@ -9,12 +9,12 @@ Vue.use(VueRouter);
 Vue.use(VueResource);
 
 const Home = require('./Home.vue').default;
-const Login = require('./Login.vue').default;
+import { loginComponent } from './js/components/login/login.js'
 const Reg = require('./Reg.vue').default;
 
 const routes = [
     { path: '/home', component: Home },
-    { path: '/login', component: Login },
+    { path: '/login', component: loginComponent },
     { path: '/reg', component: Reg }
   ];
 
