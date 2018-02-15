@@ -1,11 +1,12 @@
-  <div class="login-page">
-    <div id="login-form">
-      <h1>Авторизация на сайте</h1>
-      <fieldset>
-        <form>
-            <input type="email" required placeholder="Введите email">
-            <input type="submit" v-on:click="greet()" value="Войти">
-        </form>
-      </fieldset>
-    </div>
+<div class="login-page">
+  <div id="login-form">
+    <h1>Авторизация на сайте</h1>
+    <fieldset>
+      <form v-on:submit="login">
+          <input type="email" required placeholder="Введите email" v-model="email">
+          <input type="submit" value="Войти">
+      </form>
+      {{error}}
+    </fieldset>
   </div>
+</div>
