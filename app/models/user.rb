@@ -12,7 +12,7 @@
 
 class User < ApplicationRecord
   validates :name, presence: true
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness:true
 
   def generate_token
     self.auth_token = Digest::MD5.hexdigest DateTime.current.to_f.to_s

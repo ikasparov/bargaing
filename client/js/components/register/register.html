@@ -1,0 +1,17 @@
+<div class="reg-page">
+  <div id="reg-form">
+    <h1>Регистрация на сайте</h1>
+    <fieldset>
+      <form v-on:submit="register">
+        <input type="text" required placeholder="ФИО" v-model="name">
+        <input type="email" required placeholder="Почта" v-model="mail">
+        <input type="submit">
+      </form>
+    </fieldset>
+    <ul class="errors">
+      <li v-for="error in errors">
+        {{ error }}
+      </li>
+    </ul>
+  </div>
+</div>

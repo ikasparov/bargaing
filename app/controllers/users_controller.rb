@@ -21,7 +21,10 @@ class UsersController < ApplicationController
   end
 
   def register
-    if user = User.create user_params
+    user = User.new user_params
+
+    if user.save
+      user.generate_token
       render json: { user: user.as_json(only: [:id, :name, :auth_token]) }
     else
       render json: user.errors.full_messages, status: :unprocessable_entity
