@@ -1,10 +1,11 @@
 class RoomsController < ApplicationController
   def index
-    render json: { rooms: Room.all.as_json(only: [:id, :name]) }
-    # @rooms = Room.all
-    # if params[:date]
-    #   @schedules = 
-    # end
+    @rooms = Room.all
+
+    params[:date] ||= Date.current
+    @schedules = Schedule.where(date: params[:date].beginning_of_week..params[:date].end_of_week)
+
+    #JBuilder
   end
 
   def reserve
@@ -20,6 +21,7 @@ class RoomsController < ApplicationController
   private
 
   def schedule_permit
+    # TODO : user_id need to get through user token
     params.require(:schedule).permit(:room_id, :user_id, :date, :hour)
   end
 end
