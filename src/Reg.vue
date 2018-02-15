@@ -7,7 +7,6 @@
           <input type="text" required placeholder="ФИО">
           <input type="phone" required placeholder="Номер телефона">
           <input type="email" required placeholder="Почта">
-          <input type="password" required placeholder="Пароль">
           <input type="submit" value="Зарегистрироваться" align="center">
         </form>
       </fieldset>

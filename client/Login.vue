@@ -5,7 +5,6 @@
       <fieldset>
         <form>
             <input type="email" required placeholder="Логин">
-            <input type="password" required placeholder="Пароль">
             <input type="submit" value="Войти">
             <footer class="clearfix">
               <p><span class="info">?</span><a href="#">Забыли пароль?</a></p>

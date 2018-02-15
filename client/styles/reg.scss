@@ -1,7 +1,5 @@
 .reg-page {
-  background: url(../styles/img/background.jpg) no-repeat;
   font: 100%/1.5em sans-serif;
-  background-size: 100%;
 
   input {
       border: none;
@@ -81,5 +79,15 @@
 
   #reg-form input[type="submit"]:hover {
    background: #2E8B57;
+  }
+
+  .errors {
+    width: 400px;
+    background: rgba( 0, 0, 0, 0);
+  }
+
+  .errors li {
+    color: #f00;
+    font-size: 21px;
   }
 }

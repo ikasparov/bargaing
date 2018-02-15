@@ -10,12 +10,13 @@ Vue.use(VueResource);
 
 const Home = require('./Home.vue').default;
 const Login = require('./Login.vue').default;
-const Reg = require('./Reg.vue').default;
+import { registerComponent } from './js/components/register/register.js';
+
 
 const routes = [
     { path: '/home', component: Home },
     { path: '/login', component: Login },
-    { path: '/reg', component: Reg }
+    { path: '/reg', component: registerComponent }
   ];
 
 const router = new VueRouter({
@@ -25,3 +26,11 @@ const router = new VueRouter({
 const app = new Vue({
   router
 }).$mount('#app');
+
+new Vue({
+  el: 'body',
+  components: {
+
+  }
+}
+)
