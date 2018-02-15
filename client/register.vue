@@ -1,4 +1,3 @@
-<template>
 <div class="reg-page">
   <div id="reg-form">
     <h1>Регистрация на сайте</h1>
@@ -7,10 +6,11 @@
         <input type="text" required placeholder="ФИО">
         <input type="phone" required placeholder="Номер телефона">
         <input type="email" required placeholder="Почта">
-        <input type="password" required placeholder="Пароль">
-        <input type="submit" value="Зарегистрироваться" align="center">
       </form>
     </fieldset>
   </div>
+  <div>
+    <button v-on:click="greet()">Greet</button>
+  </div>
 </div>
-</template>
+
