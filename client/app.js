@@ -8,16 +8,16 @@ import './styles/main.scss';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
-const Home = require('./Home.vue').default;
-const Login = require('./Login.vue').default;
+import { loginComponent } from './js/components/login/login.js'
 import { registerComponent } from './js/components/register/register.js';
 
+const Home = require('./Home.vue').default;
 
 const routes = [
-    { path: '/home', component: Home },
-    { path: '/login', component: Login },
-    { path: '/reg', component: registerComponent }
-  ];
+  { path: '/home', component: Home },
+  { path: '/login', component: loginComponent },
+  { path: '/reg', component: registerComponent }
+];
 
 const router = new VueRouter({
   routes
