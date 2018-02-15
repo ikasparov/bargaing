@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   	post :register, on: :collection
   	get :current, on: :collection
   end
+
+  resources :rooms, only: [:index]
 end

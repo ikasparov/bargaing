@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+['Green', 'Blue', 'Red', 'Orange'].each do |name|
+  Room.create(name: "#{name} room")
+end
