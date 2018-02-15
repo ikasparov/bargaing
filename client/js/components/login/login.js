@@ -25,8 +25,8 @@ export const loginComponent = {
             console.log(response);
               if (response.status === 422) {
                 this.error = response.body;
-                this.$router.push('/reg');
               }
+              this.$router.push('/reg');
           });
     }
   }
