@@ -1,15 +1,19 @@
 .home-page {
-	background: url(../styles/img/home.jpg) no-repeat;
-	background-size: 100%;
+  margin-left: 15%;
+  margin-top: 6%;
+
+  .textroom td {
+    font-size: 30px;
+  }
 
   table, tr{
-    border-collapse: collapse;
-    border: 1px solid black;
+    border: 1px solid blue;
+    background-color: rgba( 30, 144, 255, 0.25);
   }
 
   td {
   	font-size: 16px;
-  	color: #ADFF2F;
+  	color: #fff;
   }
 
 
@@ -25,13 +29,17 @@
   }
 
   .time {
-    float: left;
+    float: center;
     width: 70px;
-    float: left;
+    background-color: rgba( 0, 49, 83, 0.4);
+    font-size: 17px;
   }
 
   .room {
   	width: 23%;
   	font-size: 20px;
+  }
+  .textroom {
+    font-size: 100px;
   }
 }
