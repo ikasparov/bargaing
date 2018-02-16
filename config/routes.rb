@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   	get :current, on: :collection
   end
 
-  resources :rooms, only: [:index]
+  resources :rooms, only: [:index] do 
+  	post :reserve, on: :collection
+  end
 end
